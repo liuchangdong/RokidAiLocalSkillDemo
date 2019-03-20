@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rokid.ai.skill.localdemo">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--<meta-data android:name="com.rokid.ai.skill.local.ID" android:value="R399AFF45CA74EA08C839CF64189F364"></meta-data>-->
+        <!--<meta-data android:name="com.rokid.ai.skill.local.FORM" android:value="scene"></meta-data>-->
+        <!--<meta-data android:name="com.rokid.ai.skill.local.TYPE" android:value="activity"></meta-data>-->
+        <!--<meta-data android:name="com.rokid.ai.skill.local.COMPONENT" android:value="com.rokid.localskills.GlassHandyActivity"></meta-data>-->
+        <!--<meta-data android:name="com.rokid.ai.skill.local.EXTRA" android:value="hello, hello, hello"></meta-data>-->
+
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask">
+
+            <meta-data android:name="com.rokid.ai.skill.local.ID" android:value="R92F3639E0DA4E9E983BE1B09D2F6893"></meta-data>
+            <meta-data android:name="com.rokid.ai.skill.local.FORM" android:value="scene"></meta-data>
+            <meta-data android:name="com.rokid.ai.skill.local.EXTRA" android:value="hello, hello, hello"></meta-data>
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".GlassHandyActivity"
+            android:launchMode="singleTask"
+            android:enabled="true"
+            android:exported="true">
+            <meta-data android:name="com.rokid.ai.skill.local.ID" android:value="R399AFF45CA74EA08C839CF64189F364"></meta-data>
+            <meta-data android:name="com.rokid.ai.skill.local.FORM" android:value="scene"></meta-data>
+            <meta-data android:name="com.rokid.ai.skill.local.EXTRA" android:value="handy, handy, handy"></meta-data>
+        </activity>
+
+        <!--<service android:name=".sdk.handy.HandyService"-->
+        <!--android:enabled="true"-->
+        <!--android:exported="true">-->
+        <!--<meta-data android:name="com.rokid.ai.skill.local.ID" android:value="R92F3639E0DA4E9E983BE1B09D2F6893"></meta-data>-->
+        <!--<meta-data android:name="com.rokid.ai.skill.local.FORM" android:value="scene"></meta-data>-->
+        <!--<meta-data android:name="com.rokid.ai.skill.local.EXTRA" android:value="hello, hello, hello"></meta-data>-->
+        <!--</service>-->
+
+    </application>
+
+</manifest>
